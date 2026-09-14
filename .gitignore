@@ -1,4 +1,6 @@
-*.*
+*/*.exe
 *.exe
 
+# Whitelist files with extension and source
+!*/*.cpp
 !*.cpp
