@@ -4,9 +4,9 @@ using namespace std;
 int main()
 {
     float salary = 20000;
-    float &newSalary = salary;
+    float *newSalary = &salary;
 
-    newSalary = newSalary + (newSalary * 10 / 100);
+    *newSalary = *newSalary + (*newSalary * 10 / 100);
 
     cout << "Salary from old variable: " << salary << endl;
 
